@@ -1,0 +1,39 @@
+/*.hero-center h1{
+	text-align: center;
+	font-size: max(100%, 10vw);
+	color: red;
+	margin-top: 150px;
+}*/
+.our-mission{
+	margin: 100px 50px;
+}
+.our-mission h3{
+		color: #fff;
+		width: 500px;
+		margin: 20px 50px;
+	}
+.sub-mission{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	transition: 1s ease-in;
+}
+.sub-mission p{
+	width: 400px;
+	margin:auto;
+}
+.sub-mission h1{
+	text-transform: capitalize;
+	font-size: 25px;
+}
+.three{
+	margin: 40px auto;
+}
+.finalmission:hover{
+	background: grey;
+	cursor: pointer;
+	padding: 20px 0px;
+}

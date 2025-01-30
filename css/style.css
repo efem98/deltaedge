@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--main-color) !important;
+}
+:root{
+	--main-color:#1f242d;
+	--second-bg-color:#323946;
+	--greenet:#0ef;
+	--fontsize:2rem;
+	--fontcolor:#fff;
+}
+/*nav{
+	position: fixed !important;
+	z-index: 1;
+	fle
+	display: flex;
+	justify-content: space-between !important;
+}
+*/
+h1,p{
+	color: #fff ;
+}
+h1{
+	text-transform: capitalize;
+}
+button{
+	padding: 10px 60px;
+	border: none;
+	outline: none;
+	background-color:var(--greenet);
+	box-shadow: 2px 2px 2px 2px #0ef;
+	border-radius: 30px !important;
+	color: #fff;
+}
+span{
+	color: var(--greenet);
+}
+.navbar-brand img{
+	width: 100px;
+}
+.hero{
+	display: flex;
+	color:var(--fontcolor) ;
+	margin: 50px 100px;
+}
+.socials{
+	display: flex;
+	padding: 10px;
+}
+.socials li{
+	display: flex;
+	border:1px solid #0ef;
+	border-radius: 50%;
+	padding:  20px;
+	margin-left: 5px;
+}
+.hero-right {
+	width: 350px;
+	height: auto;
+	border-radius: 30% 40% 50% 50%;
+	background-color: var(--greenet);
+	box-shadow: 6px 6px 6px 6px #0ef;
+}
+.hero-right img{
+	width: 650px;
+}
+.hero-left{
+	margin-top: 50px;
+}
+.hero-left h1{
+	font-size: max(100%, 6em);
+	text-transform: capitalize;
+}
+.light{
+	width: 90px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--main-color);
+}
+.hex{
+	position: relative;
+	background-color: red;
+	border-radius: 10px;
+	width: 100px;
+	height:63px;
+	box-sizing: border-box;
+	transition: all 1s;
+	border:4px solid transparent;
+}
+.hex:before,
+.hex:after{
+	content: "";
+	border: inherit;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	height: 100%;
+	width: 100%;
+}
+.hex:before{
+	transform: rotate(60deg);
+}
+.hex:before{
+	transform: rotate(-60deg);
+}
+.container-fluid a{
+
+	color:#fff !important;
+}
+
+/*about*/
+.about{
+	display: flex;
+	margin:100px 50px;
+}
+.aboutdes{
+	margin: 150px 30px;
+}
+ h1{
+	color: #fff !important;
+}
+.aboutimage{
+	position: relative;
+	width: 150px;
+	height: auto;
+	border-radius: 30% 40% 50% 50%;
+	background-color: var(--greenet);
+	box-shadow: 6px 6px 6px 6px #0ef;
+}
+.aboutimage h1{
+	position: absolute;
+	top: 100px;
+	left: 190px;
+	color: #000 !important;
+}
+.aboutimage img{
+	width: 600px;
+}
+
+/*service*/
+.service{
+	margin: 100px auto;
+	text-align: center;
+}
+.cardservice{
+	width: 350px;
+	height:400px;
+	background-color: var(--second-bg-color);
+	color:#fff;
+	border-radius: 15px;
+	padding: 30px;
+}
+.service-card{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+
+	justify-content: center;
+	align-items: center;
+	margin: 50px 50px;
+}
+/*latest project*/
+.project{
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+}
+.proimage{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	text-align: center;
+	margin-top: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.box{
+	position: relative;
+
+}
+.box img{
+	width:370px;
+	gap: 35px;
+	transition: 3s ease;
+	position: relative;
+}
+.box:hover img{
+	transform: scale(1.1);
+}
+.portfolio-grid{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgb(0, 0, 0, .1), var(--greenet));
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4rem;
+	transition: 0.2s;
+	transform: translateY(100%);
+}
+.box:hover .portfolio-grid{
+	transform: translateY(0);
+}
+/*.proimage .box{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-color: linear-gradient(rgba(0,0,0, .1), var(--se));
+}*/
+
+/*	CONTACT SECTION*/
+
+.contact h2{
+	margin-bottom: 3rem;
+	color: #fff;
+	text-align: center;
+	text-transform: capitalize;
+}
+.contact form{
+	max-width: 70rem;
+	margin: 1rem  auto;
+	text-align: center;
+	margin-bottom: 3rem;
+
+}
+.contact form .input-box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1.6rem;
+	color: var(--fontcolor);
+	background-color: var(--second-bg-color);
+	border-radius: .8rem;
+	margin: .7rem 0;
+}
+.contact form .input-box input{
+	width: 49%;
+}
+.contactbutton{
+	margin-left:600px;
+
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
